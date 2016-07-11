@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  AutoHome
+//
+//  Created by tarena on 16/7/6.
+//  Copyright © 2016年 tarena. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <MBProgressHUD.h>
+#import <MJRefresh.h>
+
+
+#define LYSW [UIScreen mainScreen].bounds.size.width
+#define LYSH [UIScreen mainScreen].bounds.size.height
+#define LYGrayColor [UIColor colorWithRed:244.0/255 green:244.0/255 blue:244.0/255 alpha:1]
+#define LYBlueColor [UIColor colorWithRed:6.0/255 green:150.0/255 blue:255.0/255 alpha:1]
+
+#define LYNormalTitleFont 14
+#define LYSelectedTitleFont 16
+
+
+
+
+#define MAIN @"http://mrobot.pcauto.com.cn/v2/cms/channels/1?pageNo=%ld&pageSize=20&serialIds=2143,3404&v=4.0.0"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
