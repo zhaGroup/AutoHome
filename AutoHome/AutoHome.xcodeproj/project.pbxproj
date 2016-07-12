@@ -16,6 +16,20 @@
 		52B25FA01D33D87E004D4033 /* me_person@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52B25F9B1D33D87E004D4033 /* me_person@2x.png */; };
 		52B25FA11D33D87E004D4033 /* me_weibo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52B25F9C1D33D87E004D4033 /* me_weibo@2x.png */; };
 		52B25FA31D33D88D004D4033 /* me_icon_weicat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52B25FA21D33D88D004D4033 /* me_icon_weicat@2x.png */; };
+		854277321D34C11C009D0A3C /* XHQRecommendTotalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 854277311D34C11C009D0A3C /* XHQRecommendTotalViewController.m */; };
+		854277361D34DEA1009D0A3C /* XHQTuShangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 854277351D34DEA1009D0A3C /* XHQTuShangViewController.m */; };
+		854277391D34E0B7009D0A3C /* XHQPictModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 854277381D34E0B7009D0A3C /* XHQPictModel.m */; };
+		8542773D1D34E1A0009D0A3C /* XHQPictCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542773B1D34E1A0009D0A3C /* XHQPictCell.m */; };
+		8542773E1D34E1A0009D0A3C /* XHQPictCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8542773C1D34E1A0009D0A3C /* XHQPictCell.xib */; };
+		854277411D34E992009D0A3C /* XHQPictShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 854277401D34E992009D0A3C /* XHQPictShowViewController.m */; };
+		854277431D34EC64009D0A3C /* XHQPictShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 854277421D34EC64009D0A3C /* XHQPictShowViewController.xib */; };
+		854277451D34F24F009D0A3C /* bg_day.png in Resources */ = {isa = PBXBuildFile; fileRef = 854277441D34F24F009D0A3C /* bg_day.png */; };
+		854277471D34F2A1009D0A3C /* bar_btn_icon_returntext@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 854277461D34F2A1009D0A3C /* bar_btn_icon_returntext@2x.png */; };
+		8542774A1D351CB3009D0A3C /* XHQBrandCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 854277491D351CB3009D0A3C /* XHQBrandCar.m */; };
+		8542774D1D351EA0009D0A3C /* XHQBrand.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542774C1D351EA0009D0A3C /* XHQBrand.m */; };
+		854277511D352AC5009D0A3C /* XHQBrandCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542774F1D352AC5009D0A3C /* XHQBrandCell.m */; };
+		854277521D352AC5009D0A3C /* XHQBrandCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 854277501D352AC5009D0A3C /* XHQBrandCell.xib */; };
+		854277551D353861009D0A3C /* XHQSubBrandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 854277541D353861009D0A3C /* XHQSubBrandViewController.m */; };
 		856ED08C1D2FE3D60023E990 /* XHQCilceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 856ED08B1D2FE3D60023E990 /* XHQCilceModel.m */; };
 		856ED08F1D2FE5A40023E990 /* XHQZuiXinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 856ED08E1D2FE5A40023E990 /* XHQZuiXinModel.m */; };
 		856ED0931D30857F0023E990 /* XHQZuiXinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 856ED0911D30857F0023E990 /* XHQZuiXinCell.m */; };
@@ -149,7 +163,6 @@
 		85A4F96F1D2D4756002061B3 /* XHQPingCeiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F96E1D2D4756002061B3 /* XHQPingCeiViewController.m */; };
 		85A4F9721D2D4770002061B3 /* XHQDaoGoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F9711D2D4770002061B3 /* XHQDaoGoViewController.m */; };
 		85A4F9751D2D477D002061B3 /* XHQHangQingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F9741D2D477D002061B3 /* XHQHangQingViewController.m */; };
-		85A4F9781D2D4791002061B3 /* XHQYongCheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A4F9771D2D4791002061B3 /* XHQYongCheViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +193,29 @@
 		52B25F9B1D33D87E004D4033 /* me_person@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_person@2x.png"; sourceTree = "<group>"; };
 		52B25F9C1D33D87E004D4033 /* me_weibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_weibo@2x.png"; sourceTree = "<group>"; };
 		52B25FA21D33D88D004D4033 /* me_icon_weicat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_icon_weicat@2x.png"; sourceTree = "<group>"; };
+		854277301D34C11C009D0A3C /* XHQRecommendTotalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQRecommendTotalViewController.h; sourceTree = "<group>"; };
+		854277311D34C11C009D0A3C /* XHQRecommendTotalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQRecommendTotalViewController.m; sourceTree = "<group>"; };
+		854277341D34DEA1009D0A3C /* XHQTuShangViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQTuShangViewController.h; sourceTree = "<group>"; };
+		854277351D34DEA1009D0A3C /* XHQTuShangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQTuShangViewController.m; sourceTree = "<group>"; };
+		854277371D34E0B7009D0A3C /* XHQPictModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQPictModel.h; sourceTree = "<group>"; };
+		854277381D34E0B7009D0A3C /* XHQPictModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQPictModel.m; sourceTree = "<group>"; };
+		8542773A1D34E1A0009D0A3C /* XHQPictCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQPictCell.h; sourceTree = "<group>"; };
+		8542773B1D34E1A0009D0A3C /* XHQPictCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQPictCell.m; sourceTree = "<group>"; };
+		8542773C1D34E1A0009D0A3C /* XHQPictCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHQPictCell.xib; sourceTree = "<group>"; };
+		8542773F1D34E992009D0A3C /* XHQPictShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQPictShowViewController.h; sourceTree = "<group>"; };
+		854277401D34E992009D0A3C /* XHQPictShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQPictShowViewController.m; sourceTree = "<group>"; };
+		854277421D34EC64009D0A3C /* XHQPictShowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHQPictShowViewController.xib; sourceTree = "<group>"; };
+		854277441D34F24F009D0A3C /* bg_day.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_day.png; sourceTree = "<group>"; };
+		854277461D34F2A1009D0A3C /* bar_btn_icon_returntext@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar_btn_icon_returntext@2x.png"; sourceTree = "<group>"; };
+		854277481D351CB3009D0A3C /* XHQBrandCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQBrandCar.h; sourceTree = "<group>"; };
+		854277491D351CB3009D0A3C /* XHQBrandCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQBrandCar.m; sourceTree = "<group>"; };
+		8542774B1D351EA0009D0A3C /* XHQBrand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQBrand.h; sourceTree = "<group>"; };
+		8542774C1D351EA0009D0A3C /* XHQBrand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQBrand.m; sourceTree = "<group>"; };
+		8542774E1D352AC5009D0A3C /* XHQBrandCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQBrandCell.h; sourceTree = "<group>"; };
+		8542774F1D352AC5009D0A3C /* XHQBrandCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQBrandCell.m; sourceTree = "<group>"; };
+		854277501D352AC5009D0A3C /* XHQBrandCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHQBrandCell.xib; sourceTree = "<group>"; };
+		854277531D353861009D0A3C /* XHQSubBrandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQSubBrandViewController.h; sourceTree = "<group>"; };
+		854277541D353861009D0A3C /* XHQSubBrandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQSubBrandViewController.m; sourceTree = "<group>"; };
 		856ED08A1D2FE3D60023E990 /* XHQCilceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQCilceModel.h; sourceTree = "<group>"; };
 		856ED08B1D2FE3D60023E990 /* XHQCilceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQCilceModel.m; sourceTree = "<group>"; };
 		856ED08D1D2FE5A40023E990 /* XHQZuiXinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQZuiXinModel.h; sourceTree = "<group>"; };
@@ -418,8 +454,6 @@
 		85A4F9711D2D4770002061B3 /* XHQDaoGoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQDaoGoViewController.m; sourceTree = "<group>"; };
 		85A4F9731D2D477D002061B3 /* XHQHangQingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQHangQingViewController.h; sourceTree = "<group>"; };
 		85A4F9741D2D477D002061B3 /* XHQHangQingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQHangQingViewController.m; sourceTree = "<group>"; };
-		85A4F9761D2D4791002061B3 /* XHQYongCheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQYongCheViewController.h; sourceTree = "<group>"; };
-		85A4F9771D2D4791002061B3 /* XHQYongCheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQYongCheViewController.m; sourceTree = "<group>"; };
 		C06278A06A4B052C56F404ED /* Pods-AutoHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoHome.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoHome/Pods-AutoHome.release.xcconfig"; sourceTree = "<group>"; };
 		D0CA6EAAD21338A271154D33 /* Pods-AutoHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoHome/Pods-AutoHome.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -465,6 +499,23 @@
 				C06278A06A4B052C56F404ED /* Pods-AutoHome.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		854277331D34DEA1009D0A3C /* TuShang */ = {
+			isa = PBXGroup;
+			children = (
+				854277341D34DEA1009D0A3C /* XHQTuShangViewController.h */,
+				854277351D34DEA1009D0A3C /* XHQTuShangViewController.m */,
+				8542773F1D34E992009D0A3C /* XHQPictShowViewController.h */,
+				854277401D34E992009D0A3C /* XHQPictShowViewController.m */,
+				854277421D34EC64009D0A3C /* XHQPictShowViewController.xib */,
+				854277371D34E0B7009D0A3C /* XHQPictModel.h */,
+				854277381D34E0B7009D0A3C /* XHQPictModel.m */,
+				8542773A1D34E1A0009D0A3C /* XHQPictCell.h */,
+				8542773B1D34E1A0009D0A3C /* XHQPictCell.m */,
+				8542773C1D34E1A0009D0A3C /* XHQPictCell.xib */,
+			);
+			path = TuShang;
 			sourceTree = "<group>";
 		};
 		856ED0951D308DE40023E990 /* PhotoBroswerFrameWorks */ = {
@@ -970,6 +1021,15 @@
 			children = (
 				857841F51D2E3693002C6528 /* XHQPingPaiViewController.h */,
 				857841F61D2E3693002C6528 /* XHQPingPaiViewController.m */,
+				854277531D353861009D0A3C /* XHQSubBrandViewController.h */,
+				854277541D353861009D0A3C /* XHQSubBrandViewController.m */,
+				8542774E1D352AC5009D0A3C /* XHQBrandCell.h */,
+				8542774F1D352AC5009D0A3C /* XHQBrandCell.m */,
+				854277501D352AC5009D0A3C /* XHQBrandCell.xib */,
+				854277481D351CB3009D0A3C /* XHQBrandCar.h */,
+				854277491D351CB3009D0A3C /* XHQBrandCar.m */,
+				8542774B1D351EA0009D0A3C /* XHQBrand.h */,
+				8542774C1D351EA0009D0A3C /* XHQBrand.m */,
 			);
 			path = PingPai;
 			sourceTree = "<group>";
@@ -1082,6 +1142,8 @@
 		859B85BC1D2D125800305744 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				854277461D34F2A1009D0A3C /* bar_btn_icon_returntext@2x.png */,
+				854277441D34F24F009D0A3C /* bg_day.png */,
 				52B25FA21D33D88D004D4033 /* me_icon_weicat@2x.png */,
 				52B25F981D33D87E004D4033 /* me_day@2x.png */,
 				52B25F991D33D87E004D4033 /* me_moon@2x.png */,
@@ -1269,6 +1331,8 @@
 				85A4F9541D2D4650002061B3 /* ChilderViewController */,
 				859B861C1D2D2DBB00305744 /* XHQRecommendViewController.h */,
 				859B861D1D2D2DBB00305744 /* XHQRecommendViewController.m */,
+				854277301D34C11C009D0A3C /* XHQRecommendTotalViewController.h */,
+				854277311D34C11C009D0A3C /* XHQRecommendTotalViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1335,13 +1399,13 @@
 			children = (
 				85A4F95D1D2D4650002061B3 /* ZuiXin */,
 				85A4F9581D2D4650002061B3 /* PingCei */,
+				85A4F9561D2D4650002061B3 /* Hangqing */,
+				854277331D34DEA1009D0A3C /* TuShang */,
 				85A4F95C1D2D4650002061B3 /* YouChuang+ */,
 				85A4F9571D2D4650002061B3 /* KuaiBao */,
 				85A4F9591D2D4650002061B3 /* ShiPin */,
 				85A4F95A1D2D4650002061B3 /* XinWen */,
 				85A4F9551D2D4650002061B3 /* DaoGo */,
-				85A4F9561D2D4650002061B3 /* Hangqing */,
-				85A4F95B1D2D4650002061B3 /* YongChe */,
 			);
 			path = ChilderViewController;
 			sourceTree = "<group>";
@@ -1398,15 +1462,6 @@
 				85A4F96B1D2D4741002061B3 /* XHQXinWenViewController.m */,
 			);
 			path = XinWen;
-			sourceTree = "<group>";
-		};
-		85A4F95B1D2D4650002061B3 /* YongChe */ = {
-			isa = PBXGroup;
-			children = (
-				85A4F9761D2D4791002061B3 /* XHQYongCheViewController.h */,
-				85A4F9771D2D4791002061B3 /* XHQYongCheViewController.m */,
-			);
-			path = YongChe;
 			sourceTree = "<group>";
 		};
 		85A4F95C1D2D4650002061B3 /* YouChuang+ */ = {
@@ -1545,6 +1600,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52B25F9E1D33D87E004D4033 /* me_moon@2x.png in Resources */,
+				854277431D34EC64009D0A3C /* XHQPictShowViewController.xib in Resources */,
 				857842281D2E8544002C6528 /* 5.png in Resources */,
 				857842251D2E8544002C6528 /* 2.png in Resources */,
 				52B25FA11D33D87E004D4033 /* me_weibo@2x.png in Resources */,
@@ -1566,13 +1622,16 @@
 				856ED14E1D308DE40023E990 /* PhotoBroswerVC.xib in Resources */,
 				859B85E31D2D125900305744 /* tab04_p@2x.png in Resources */,
 				857842261D2E8544002C6528 /* 3.png in Resources */,
+				854277451D34F24F009D0A3C /* bg_day.png in Resources */,
 				859B85E01D2D125900305744 /* tab03_p@3x.png in Resources */,
 				52B25F971D33D706004D4033 /* XHQMeViewController.xib in Resources */,
 				856ED1661D308DE40023E990 /* SVProgressHUD.bundle in Resources */,
 				52B25FA31D33D88D004D4033 /* me_icon_weicat@2x.png in Resources */,
 				856ED1451D308DE40023E990 /* PB.bundle in Resources */,
 				859B85DC1D2D125900305744 /* tab02_p@3x.png in Resources */,
+				854277471D34F2A1009D0A3C /* bar_btn_icon_returntext@2x.png in Resources */,
 				85A4F93C1D2D330B002061B3 /* bar_btn_icon_search@2x.png in Resources */,
+				8542773E1D34E1A0009D0A3C /* XHQPictCell.xib in Resources */,
 				859B85D81D2D125900305744 /* tab01_p@3x.png in Resources */,
 				859B85EA1D2D125900305744 /* tab05@3x.png in Resources */,
 				859B85D61D2D125900305744 /* tab01@3x.png in Resources */,
@@ -1581,6 +1640,7 @@
 				52B25F9D1D33D87E004D4033 /* me_day@2x.png in Resources */,
 				856ED0941D30857F0023E990 /* XHQZuiXinCell.xib in Resources */,
 				859B85B81D2D0F1800305744 /* Podfile in Resources */,
+				854277521D352AC5009D0A3C /* XHQBrandCell.xib in Resources */,
 				859B85DF1D2D125900305744 /* tab03_p@2x.png in Resources */,
 				859B85EB1D2D125900305744 /* tab05_p@2x.png in Resources */,
 				859B85D51D2D125900305744 /* tab01@2x.png in Resources */,
@@ -1664,6 +1724,7 @@
 				857842171D2E8024002C6528 /* NSData+KNCache.m in Sources */,
 				856ED1581D308DE40023E990 /* SDWebImageManager.m in Sources */,
 				856ED15F1D308DE40023E990 /* UIImageView+WebCache.m in Sources */,
+				8542773D1D34E1A0009D0A3C /* XHQPictCell.m in Sources */,
 				856ED14A1D308DE40023E990 /* PhotoImageView.m in Sources */,
 				856ED14F1D308DE40023E990 /* UIImage+ReMake.m in Sources */,
 				856ED1671D308DE40023E990 /* SVProgressHUD.m in Sources */,
@@ -1676,12 +1737,14 @@
 				856ED13F1D308DE40023E990 /* UIView+Extend.m in Sources */,
 				856ED1341D308DE40023E990 /* NSString+Extend.m in Sources */,
 				857842031D2E619F002C6528 /* XHQRootViewController.m in Sources */,
+				8542774D1D351EA0009D0A3C /* XHQBrand.m in Sources */,
 				856ED1641D308DE40023E990 /* CoreSVP.m in Sources */,
 				857841FD1D2E36F0002C6528 /* XHQJiangJiaViewController.m in Sources */,
 				856ED1571D308DE40023E990 /* SDWebImageDownloaderOperation.m in Sources */,
-				85A4F9781D2D4791002061B3 /* XHQYongCheViewController.m in Sources */,
 				85A4F9661D2D471A002061B3 /* XHQKuaiBaoViewController.m in Sources */,
+				854277361D34DEA1009D0A3C /* XHQTuShangViewController.m in Sources */,
 				856ED1591D308DE40023E990 /* SDWebImagePrefetcher.m in Sources */,
+				854277511D352AC5009D0A3C /* XHQBrandCell.m in Sources */,
 				85A4F9631D2D4703002061B3 /* XHQYouChuangViewController.m in Sources */,
 				857841DA1D2DF73D002C6528 /* XBTagTitleCell.m in Sources */,
 				856ED13A1D308DE40023E990 /* UIImage+Cut.m in Sources */,
@@ -1694,8 +1757,10 @@
 				856ED1561D308DE40023E990 /* SDWebImageDownloader.m in Sources */,
 				859B862C1D2D2DBB00305744 /* XHQRecommendViewController.m in Sources */,
 				857841DB1D2DF73D002C6528 /* XBConst.m in Sources */,
+				8542774A1D351CB3009D0A3C /* XHQBrandCar.m in Sources */,
 				859B86281D2D2DBB00305744 /* XHQTabBarViewController.m in Sources */,
 				859B85891D2D0EFE00305744 /* AppDelegate.m in Sources */,
+				854277391D34E0B7009D0A3C /* XHQPictModel.m in Sources */,
 				857842001D2E371D002C6528 /* XHQZhaoErShouCheViewController.m in Sources */,
 				856ED15B1D308DE40023E990 /* UIImage+GIF.m in Sources */,
 				856ED15D1D308DE40023E990 /* UIImage+WebP.m in Sources */,
@@ -1705,6 +1770,7 @@
 				856ED1351D308DE40023E990 /* NSString+Password.m in Sources */,
 				856ED1331D308DE40023E990 /* NSObject+Extend.m in Sources */,
 				856ED13E1D308DE40023E990 /* UITableViewCell+Extend.m in Sources */,
+				854277551D353861009D0A3C /* XHQSubBrandViewController.m in Sources */,
 				856ED08F1D2FE5A40023E990 /* XHQZuiXinModel.m in Sources */,
 				857842151D2E8024002C6528 /* KNCollectionViewCell.m in Sources */,
 				856ED14D1D308DE40023E990 /* PhotoBroswerVC.m in Sources */,
@@ -1713,11 +1779,13 @@
 				856ED1411D308DE40023E990 /* UIView+PBExtend.m in Sources */,
 				857842181D2E8024002C6528 /* NSString+hash.m in Sources */,
 				85A4F96F1D2D4756002061B3 /* XHQPingCeiViewController.m in Sources */,
+				854277321D34C11C009D0A3C /* XHQRecommendTotalViewController.m in Sources */,
 				856ED1541D308DE40023E990 /* SDWebImageCompat.m in Sources */,
 				856ED15E1D308DE40023E990 /* UIImageView+HighlightedWebCache.m in Sources */,
 				856ED1601D308DE40023E990 /* UIView+WebCacheOperation.m in Sources */,
 				856ED1401D308DE40023E990 /* UIWindow+Launch.m in Sources */,
 				856ED15C1D308DE40023E990 /* UIImage+MultiFormat.m in Sources */,
+				854277411D34E992009D0A3C /* XHQPictShowViewController.m in Sources */,
 				856ED15A1D308DE40023E990 /* UIButton+WebCache.m in Sources */,
 				859B862A1D2D2DBB00305744 /* XHQFoundViewController.m in Sources */,
 				856ED1621D308DE40023E990 /* UIImageView+SD.m in Sources */,

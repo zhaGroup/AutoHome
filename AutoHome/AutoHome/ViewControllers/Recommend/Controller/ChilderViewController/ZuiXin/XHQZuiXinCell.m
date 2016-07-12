@@ -7,7 +7,6 @@
 //
 
 #import "XHQZuiXinCell.h"
-#import "UIImageView+WebCache.h"
 
 @interface XHQZuiXinCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageV;

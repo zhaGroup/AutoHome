@@ -6,8 +6,8 @@
 //  Copyright © 2016年 tarena. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "XHQRootViewController.h"
 
-@interface XHQYongCheViewController : UIViewController
+@interface XHQTuShangViewController : XHQRootViewController
 
 @end

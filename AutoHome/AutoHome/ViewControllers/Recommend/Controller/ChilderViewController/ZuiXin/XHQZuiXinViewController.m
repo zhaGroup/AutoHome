@@ -33,7 +33,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setMytableView];
-    [self refreshData];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pushAction:) name:@"ImageNOtification" object:nil];
     
 }
@@ -61,7 +60,6 @@
 //设置上拉加载和下拉刷新
 -(void)setRefreshView
 {
-    _page = 1;
     MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [self refreshData];
     }];
@@ -71,10 +69,8 @@
     self.tableView.mj_header = header;
     [self.tableView.mj_header beginRefreshing];
     
-    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-        [self loadMoreData];
-    }];
-    [self.tableView.mj_footer beginRefreshing];
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
+//    [self.tableView.mj_footer beginRefreshing];
 }
 
 
@@ -135,7 +131,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
-//    [self setRefreshView];
+    [self setRefreshView];
     [self.tableView registerNib:[UINib nibWithNibName:@"XHQZuiXinCell" bundle:nil] forCellReuseIdentifier:@"cell"];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
@@ -175,16 +171,18 @@
     XHQZuiXinModel *model = self.dataSource[indexPath.row];
     XHQWebViewController *webVC = [[XHQWebViewController alloc] init];
     webVC.urlPath = model.url;
+    webVC.theme = @"最新";
     [self pushNextWithType:@"cube" Subtype:@"fromBottom" ViewController:webVC];
 }
 
 //给cell添加动画
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    cell.layer.transform = CATransform3DMakeScale(0.1, 0.1, 0.1);
-    [UIView animateWithDuration:1 animations:^{
-        cell.layer.transform = CATransform3DMakeScale(1, 1, 1);
-    }];
+        cell.layer.transform = CATransform3DMakeScale(0.1, 0.1, 0.1);
+        [UIView animateWithDuration:2 animations:^{
+            cell.layer.transform = CATransform3DMakeScale(1, 1, 1);
+        }];
+    
 }
 
 

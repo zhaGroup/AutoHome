@@ -6,9 +6,10 @@
 //  Copyright © 2016年 tarena. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "XHQRootViewController.h"
 
-@interface XHQWebViewController : UIViewController
+@interface XHQWebViewController : XHQRootViewController
 @property (nonatomic,copy) NSString *urlPath;
+@property (nonatomic,copy) NSString *theme;
 
 @end

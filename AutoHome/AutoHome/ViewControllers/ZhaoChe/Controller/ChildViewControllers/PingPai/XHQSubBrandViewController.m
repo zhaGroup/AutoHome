@@ -1,22 +1,22 @@
 //
-//  XHQYongCheViewController.m
+//  XHQSubBrandViewController.m
 //  AutoHome
 //
-//  Created by tarena on 16/7/6.
+//  Created by tarena on 16/7/12.
 //  Copyright © 2016年 tarena. All rights reserved.
 //
 
-#import "XHQYongCheViewController.h"
+#import "XHQSubBrandViewController.h"
 
-@interface XHQYongCheViewController ()
+@interface XHQSubBrandViewController ()
 
 @end
 
-@implementation XHQYongCheViewController
+@implementation XHQSubBrandViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor orangeColor];
+    self.view.backgroundColor = [UIColor cyanColor];
 }
 
 - (void)didReceiveMemoryWarning {

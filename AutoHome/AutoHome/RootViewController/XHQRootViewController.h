@@ -20,4 +20,6 @@
 
 -(void)pushNextWithType:(NSString*)type Subtype:(NSString*)subtype ViewController:(UIViewController*)viewController;
 
+-(void)backWithType:(NSString *)type Subtype:(NSString *)subtype;
+
 @end

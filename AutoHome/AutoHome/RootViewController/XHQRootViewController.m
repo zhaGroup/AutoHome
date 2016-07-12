@@ -9,7 +9,7 @@
 #import "XHQRootViewController.h"
 
 @interface XHQRootViewController ()
--(void) showIndicatorInView:(UIView*)presentView isDisplay:(BOOL)show;//是否显示指示器
+-(void) showIndicatorInView:(UIView*)presentView isDisplay:(BOOL)show;
 
 @property (nonatomic,strong) MBProgressHUD *hud;
 
@@ -74,6 +74,15 @@
     viewController.hidesBottomBarWhenPushed = YES;
     [self.navigationController.view.layer addAnimation:transition forKey:nil];
     [self.navigationController pushViewController:viewController animated:nil];
+}
+-(void)backWithType:(NSString *)type Subtype:(NSString *)subtype
+{
+    CATransition *transition = [CATransition animation];
+    transition.type = type;
+    transition.subtype = subtype;
+    transition.duration = 2;
+    [self.navigationController.view.layer addAnimation:transition forKey:nil];
+    [self.navigationController popViewControllerAnimated:nil];
 }
 
 #pragma mark ---- 懒加载 ----

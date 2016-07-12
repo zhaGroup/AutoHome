@@ -6,8 +6,8 @@
 //  Copyright © 2016年 tarena. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "XHQRecommendTotalViewController.h"
 
-@interface XHQPingCeiViewController : UIViewController
+@interface XHQPingCeiViewController : XHQRecommendTotalViewController
 
 @end

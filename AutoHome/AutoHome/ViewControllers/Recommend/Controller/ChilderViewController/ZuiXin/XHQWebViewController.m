@@ -13,14 +13,17 @@
 @end
 
 @implementation XHQWebViewController
--(void)viewDidAppear:(BOOL)animated
+-(void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidAppear:animated];
+    [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    if ([self.theme isEqualToString:@"最新"]) {
+        [self configNavi];
+    }
     UIWebView *web = [[UIWebView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:web];
     
@@ -32,7 +35,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)configNavi
+{
+    self.navigationItem.title = self.theme;
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"bar_btn_icon_returntext"] style:UIBarButtonItemStylePlain target:self action:@selector(backAction:)];
+}
+-(void)backAction:(UIBarButtonItem*)sender
+{
+    [self backWithType:@"cube" Subtype:@"fromTop"];
+}
 /*
 #pragma mark - Navigation
 

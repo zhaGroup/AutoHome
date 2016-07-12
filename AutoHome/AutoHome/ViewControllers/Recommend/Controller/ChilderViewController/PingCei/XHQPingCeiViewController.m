@@ -16,14 +16,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.path = PingCe;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)configNavi
+{
+    self.navigationItem.title = @"评测";
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"bar_btn_icon_returntext"] style:UIBarButtonItemStylePlain target:self action:@selector(backAction:)];
+}
+-(void)backAction:(UIBarButtonItem*)sender
+{
+    [self backWithType:@"reveal" Subtype:@"fromLeft"];
+}
 /*
 #pragma mark - Navigation
 
