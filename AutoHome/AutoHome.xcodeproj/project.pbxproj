@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		442DA07978D5649A15853F2F /* libPods-AutoHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7A2BF5BCFF41A277476B24 /* libPods-AutoHome.a */; };
+		52B25F961D33D706004D4033 /* XHQMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B25F941D33D706004D4033 /* XHQMeViewController.m */; };
+		52B25F971D33D706004D4033 /* XHQMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52B25F951D33D706004D4033 /* XHQMeViewController.xib */; };
+		52B25F9D1D33D87E004D4033 /* me_day@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52B25F981D33D87E004D4033 /* me_day@2x.png */; };
+		52B25F9E1D33D87E004D4033 /* me_moon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52B25F991D33D87E004D4033 /* me_moon@2x.png */; };
+		52B25F9F1D33D87E004D4033 /* me_qq@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52B25F9A1D33D87E004D4033 /* me_qq@2x.png */; };
+		52B25FA01D33D87E004D4033 /* me_person@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52B25F9B1D33D87E004D4033 /* me_person@2x.png */; };
+		52B25FA11D33D87E004D4033 /* me_weibo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52B25F9C1D33D87E004D4033 /* me_weibo@2x.png */; };
+		52B25FA31D33D88D004D4033 /* me_icon_weicat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52B25FA21D33D88D004D4033 /* me_icon_weicat@2x.png */; };
 		856ED08C1D2FE3D60023E990 /* XHQCilceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 856ED08B1D2FE3D60023E990 /* XHQCilceModel.m */; };
 		856ED08F1D2FE5A40023E990 /* XHQZuiXinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 856ED08E1D2FE5A40023E990 /* XHQZuiXinModel.m */; };
 		856ED0931D30857F0023E990 /* XHQZuiXinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 856ED0911D30857F0023E990 /* XHQZuiXinCell.m */; };
@@ -130,7 +138,6 @@
 		859B86281D2D2DBB00305744 /* XHQTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859B86061D2D2DBB00305744 /* XHQTabBarViewController.m */; };
 		859B86291D2D2DBB00305744 /* XHQForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859B860B1D2D2DBB00305744 /* XHQForumViewController.m */; };
 		859B862A1D2D2DBB00305744 /* XHQFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859B86111D2D2DBB00305744 /* XHQFoundViewController.m */; };
-		859B862B1D2D2DBB00305744 /* XHQMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859B86171D2D2DBB00305744 /* XHQMeViewController.m */; };
 		859B862C1D2D2DBB00305744 /* XHQRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859B861D1D2D2DBB00305744 /* XHQRecommendViewController.m */; };
 		859B862D1D2D2DBB00305744 /* XHQZhaoCheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859B86231D2D2DBB00305744 /* XHQZhaoCheViewController.m */; };
 		85A4F93C1D2D330B002061B3 /* bar_btn_icon_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A4F93B1D2D330B002061B3 /* bar_btn_icon_search@2x.png */; };
@@ -164,6 +171,15 @@
 
 /* Begin PBXFileReference section */
 		1A7A2BF5BCFF41A277476B24 /* libPods-AutoHome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutoHome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B25F931D33D706004D4033 /* XHQMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XHQMeViewController.h; path = Controller/XHQMeViewController.h; sourceTree = "<group>"; };
+		52B25F941D33D706004D4033 /* XHQMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XHQMeViewController.m; path = Controller/XHQMeViewController.m; sourceTree = "<group>"; };
+		52B25F951D33D706004D4033 /* XHQMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XHQMeViewController.xib; path = Controller/XHQMeViewController.xib; sourceTree = "<group>"; };
+		52B25F981D33D87E004D4033 /* me_day@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_day@2x.png"; sourceTree = "<group>"; };
+		52B25F991D33D87E004D4033 /* me_moon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_moon@2x.png"; sourceTree = "<group>"; };
+		52B25F9A1D33D87E004D4033 /* me_qq@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_qq@2x.png"; sourceTree = "<group>"; };
+		52B25F9B1D33D87E004D4033 /* me_person@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_person@2x.png"; sourceTree = "<group>"; };
+		52B25F9C1D33D87E004D4033 /* me_weibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_weibo@2x.png"; sourceTree = "<group>"; };
+		52B25FA21D33D88D004D4033 /* me_icon_weicat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_icon_weicat@2x.png"; sourceTree = "<group>"; };
 		856ED08A1D2FE3D60023E990 /* XHQCilceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQCilceModel.h; sourceTree = "<group>"; };
 		856ED08B1D2FE3D60023E990 /* XHQCilceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQCilceModel.m; sourceTree = "<group>"; };
 		856ED08D1D2FE5A40023E990 /* XHQZuiXinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQZuiXinModel.h; sourceTree = "<group>"; };
@@ -381,8 +397,6 @@
 		859B860B1D2D2DBB00305744 /* XHQForumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQForumViewController.m; sourceTree = "<group>"; };
 		859B86101D2D2DBB00305744 /* XHQFoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQFoundViewController.h; sourceTree = "<group>"; };
 		859B86111D2D2DBB00305744 /* XHQFoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQFoundViewController.m; sourceTree = "<group>"; };
-		859B86161D2D2DBB00305744 /* XHQMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQMeViewController.h; sourceTree = "<group>"; };
-		859B86171D2D2DBB00305744 /* XHQMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQMeViewController.m; sourceTree = "<group>"; };
 		859B861C1D2D2DBB00305744 /* XHQRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQRecommendViewController.h; sourceTree = "<group>"; };
 		859B861D1D2D2DBB00305744 /* XHQRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQRecommendViewController.m; sourceTree = "<group>"; };
 		859B86221D2D2DBB00305744 /* XHQZhaoCheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQZhaoCheViewController.h; sourceTree = "<group>"; };
@@ -1068,6 +1082,12 @@
 		859B85BC1D2D125800305744 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				52B25FA21D33D88D004D4033 /* me_icon_weicat@2x.png */,
+				52B25F981D33D87E004D4033 /* me_day@2x.png */,
+				52B25F991D33D87E004D4033 /* me_moon@2x.png */,
+				52B25F9A1D33D87E004D4033 /* me_qq@2x.png */,
+				52B25F9B1D33D87E004D4033 /* me_person@2x.png */,
+				52B25F9C1D33D87E004D4033 /* me_weibo@2x.png */,
 				8578421F1D2E8544002C6528 /* 1.png */,
 				857842201D2E8544002C6528 /* 2.png */,
 				857842211D2E8544002C6528 /* 3.png */,
@@ -1202,6 +1222,9 @@
 			isa = PBXGroup;
 			children = (
 				859B86151D2D2DBB00305744 /* Controller */,
+				52B25F931D33D706004D4033 /* XHQMeViewController.h */,
+				52B25F941D33D706004D4033 /* XHQMeViewController.m */,
+				52B25F951D33D706004D4033 /* XHQMeViewController.xib */,
 				859B86181D2D2DBB00305744 /* Model */,
 				859B86191D2D2DBB00305744 /* View */,
 			);
@@ -1211,10 +1234,9 @@
 		859B86151D2D2DBB00305744 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				859B86161D2D2DBB00305744 /* XHQMeViewController.h */,
-				859B86171D2D2DBB00305744 /* XHQMeViewController.m */,
 			);
-			path = Controller;
+			name = Controller;
+			path = ../../../../../../AutoHome/AutoHome/ViewControllers/Me/Controller;
 			sourceTree = "<group>";
 		};
 		859B86181D2D2DBB00305744 /* Model */ = {
@@ -1522,8 +1544,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52B25F9E1D33D87E004D4033 /* me_moon@2x.png in Resources */,
 				857842281D2E8544002C6528 /* 5.png in Resources */,
 				857842251D2E8544002C6528 /* 2.png in Resources */,
+				52B25FA11D33D87E004D4033 /* me_weibo@2x.png in Resources */,
+				52B25FA01D33D87E004D4033 /* me_person@2x.png in Resources */,
 				859B85E11D2D125900305744 /* tab04@2x.png in Resources */,
 				859B85E21D2D125900305744 /* tab04@3x.png in Resources */,
 				859B85D71D2D125900305744 /* tab01_p@2x.png in Resources */,
@@ -1533,6 +1558,7 @@
 				857842241D2E8544002C6528 /* 1.png in Resources */,
 				859B85941D2D0EFE00305744 /* LaunchScreen.storyboard in Resources */,
 				859B85911D2D0EFE00305744 /* Assets.xcassets in Resources */,
+				52B25F9F1D33D87E004D4033 /* me_qq@2x.png in Resources */,
 				857842271D2E8544002C6528 /* 4.png in Resources */,
 				859B85DB1D2D125900305744 /* tab02_p@2x.png in Resources */,
 				859B85EC1D2D125900305744 /* tab05_p@3x.png in Resources */,
@@ -1541,7 +1567,9 @@
 				859B85E31D2D125900305744 /* tab04_p@2x.png in Resources */,
 				857842261D2E8544002C6528 /* 3.png in Resources */,
 				859B85E01D2D125900305744 /* tab03_p@3x.png in Resources */,
+				52B25F971D33D706004D4033 /* XHQMeViewController.xib in Resources */,
 				856ED1661D308DE40023E990 /* SVProgressHUD.bundle in Resources */,
+				52B25FA31D33D88D004D4033 /* me_icon_weicat@2x.png in Resources */,
 				856ED1451D308DE40023E990 /* PB.bundle in Resources */,
 				859B85DC1D2D125900305744 /* tab02_p@3x.png in Resources */,
 				85A4F93C1D2D330B002061B3 /* bar_btn_icon_search@2x.png in Resources */,
@@ -1550,6 +1578,7 @@
 				859B85D61D2D125900305744 /* tab01@3x.png in Resources */,
 				856ED14C1D308DE40023E990 /* PhotoItemView.xib in Resources */,
 				859B85DE1D2D125900305744 /* tab03@3x.png in Resources */,
+				52B25F9D1D33D87E004D4033 /* me_day@2x.png in Resources */,
 				856ED0941D30857F0023E990 /* XHQZuiXinCell.xib in Resources */,
 				859B85B81D2D0F1800305744 /* Podfile in Resources */,
 				859B85DF1D2D125900305744 /* tab03_p@2x.png in Resources */,
@@ -1659,6 +1688,7 @@
 				85A4F9751D2D477D002061B3 /* XHQHangQingViewController.m in Sources */,
 				857842061D2E61FD002C6528 /* XHQNetRequest.m in Sources */,
 				856ED1651D308DE40023E990 /* SVIndefiniteAnimatedView.m in Sources */,
+				52B25F961D33D706004D4033 /* XHQMeViewController.m in Sources */,
 				856ED1371D308DE40023E990 /* UIDevice+Extend.m in Sources */,
 				856ED1511D308DE40023E990 /* MKAnnotationView+WebCache.m in Sources */,
 				856ED1561D308DE40023E990 /* SDWebImageDownloader.m in Sources */,
@@ -1672,7 +1702,6 @@
 				856ED1301D308DE40023E990 /* CALayer+Transition.m in Sources */,
 				856ED08C1D2FE3D60023E990 /* XHQCilceModel.m in Sources */,
 				857842141D2E8024002C6528 /* KNBannerView.m in Sources */,
-				859B862B1D2D2DBB00305744 /* XHQMeViewController.m in Sources */,
 				856ED1351D308DE40023E990 /* NSString+Password.m in Sources */,
 				856ED1331D308DE40023E990 /* NSObject+Extend.m in Sources */,
 				856ED13E1D308DE40023E990 /* UITableViewCell+Extend.m in Sources */,
@@ -1860,6 +1889,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = AutoHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarena.AutoHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1873,6 +1903,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = AutoHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarena.AutoHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
