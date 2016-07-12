@@ -17,7 +17,7 @@
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *cirleArr;
 @property (nonatomic,assign) NSInteger page;
-@property (nonatomic,strong) NSArray *tempArr;
+//@property (nonatomic,strong) NSArray *tempArr;
 
 @end
 
@@ -61,6 +61,7 @@
 //设置上拉加载和下拉刷新
 -(void)setRefreshView
 {
+    _page = 1;
     MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [self refreshData];
     }];
@@ -93,10 +94,13 @@
     
     //轮播图
     NSArray *clile = data[@"focus"];
-    for (NSDictionary *dic in clile) {
-        XHQCilceModel *model = [[XHQCilceModel alloc] initWithDictionary:dic error:nil];
-        [self.cirleArr addObject:model];
+    if (self.cirleArr.count == 0) {
+        for (NSDictionary *dic in clile) {
+            XHQCilceModel *model = [[XHQCilceModel alloc] initWithDictionary:dic error:nil];
+            [self.cirleArr addObject:model];
+        }
     }
+    
 //    self.tempArr = self.cirleArr;
     //首页数据
     NSArray *items = data[@"data"];
@@ -106,7 +110,8 @@
 //        NSLog(@"%ld",self.dataSource.count);
     }
     [self.tableView reloadData];
-    [self setHeardView];
+//    [self refreshData];
+//    [self setHeardView];
     
     //结束上拉和下拉刷新
     if (_page == 1) {
@@ -116,11 +121,11 @@
         [self.tableView.mj_footer endRefreshing];
     }
 }
--(void)setHeardView
+-(UIView*)setHeardView
 {
     XHQHeaderView *heardV = [[XHQHeaderView alloc] initWithFrame:CGRectMake(0, 0, LYSW, 200)];
     heardV.allImages = [self.cirleArr copy];
-    self.tableView.tableHeaderView = heardV;
+    return heardV;
 }
 -(void)setMytableView
 {
@@ -130,8 +135,16 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
-    [self setRefreshView];
+//    [self setRefreshView];
     [self.tableView registerNib:[UINib nibWithNibName:@"XHQZuiXinCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 200;
+}
+-(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return [self setHeardView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -155,6 +168,23 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 100;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    XHQZuiXinModel *model = self.dataSource[indexPath.row];
+    XHQWebViewController *webVC = [[XHQWebViewController alloc] init];
+    webVC.urlPath = model.url;
+    [self pushNextWithType:@"cube" Subtype:@"fromBottom" ViewController:webVC];
+}
+
+//给cell添加动画
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    cell.layer.transform = CATransform3DMakeScale(0.1, 0.1, 0.1);
+    [UIView animateWithDuration:1 animations:^{
+        cell.layer.transform = CATransform3DMakeScale(1, 1, 1);
+    }];
 }
 
 

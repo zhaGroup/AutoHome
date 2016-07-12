@@ -53,11 +53,11 @@
 //    self.backgroundColor = [UIColor whiteColor];
     self.selectedIndicatorColor = LYBlueColor;
     
-    NSArray *titleArray = @[@"最新",@"优创",@"快报",@"视频",@"新闻",@"评测",@"导购",@"行情",@"用车"];
+    NSArray *titleArray = @[@"最新",@"评测",@"快报",@"视频",@"新闻",@"优创",@"导购",@"行情",@"用车"];
     
     
     
-    NSArray *classNames =@[ [XHQZuiXinViewController class],[XHQYouChuangViewController class],[XHQKuaiBaoViewController class],[XHQShiPinViewController class],[XHQXinWenViewController class],[XHQPingCeiViewController class],[XHQDaoGoViewController class],[XHQHangQingViewController class],[XHQYongCheViewController class]];
+    NSArray *classNames =@[ [XHQZuiXinViewController class],[XHQPingCeiViewController class],[XHQKuaiBaoViewController class],[XHQShiPinViewController class],[XHQXinWenViewController class],[XHQYouChuangViewController class],[XHQDaoGoViewController class],[XHQHangQingViewController class],[XHQYongCheViewController class]];
     
     
     [self reloadDataWith:titleArray andSubViewdisplayClasses:classNames];

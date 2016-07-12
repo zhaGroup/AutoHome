@@ -70,22 +70,22 @@
     return 1;
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+//-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+////    
+////    switch (indexPath.section) {
+////        case 0:
+////            <#statements#>
+////            break;
+////            
+////        default:
+////            break;
+//    }
 //    
-//    switch (indexPath.section) {
-//        case 0:
-//            <#statements#>
-//            break;
-//            
-//        default:
-//            break;
-    }
-    
-    
-    
-    
-    
-}
+//    
+//    
+//    
+//    
+//}
 
 //-(void)viewDidAppear:(BOOL)animated
 //{
