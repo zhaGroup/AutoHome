@@ -81,9 +81,11 @@
     XHQBrandCar *model = self.dataSource[section];
     return model.letter;
 }
+//点中cell的时候
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIWindow *window = [[UIWindow alloc] init];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    UIWindow *window = [[UIWindow alloc] initWithFrame:CGRectMake(LYSW , 64, LYSW , LYSH - 112)];
     window.backgroundColor = [[UIColor clearColor] colorWithAlphaComponent:0.7];
     window.windowLevel = UIWindowLevelNormal;
     window.hidden = NO;
@@ -91,7 +93,7 @@
     window.rootViewController = [[XHQSubBrandViewController alloc] init];
     self.window = window;
     
-    UIView *bgView = [[UIView alloc] init];
+    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(LYSW, 0, LYSW / 4 * 3, LYSH)];
     [UIView animateWithDuration:0.25 animations:^{
         [window setFrame:CGRectMake(LYSW - LYSW / 4 * 3, 64, LYSW / 4 * 3, LYSH - 112)];
         [bgView setFrame:self.view.bounds];
@@ -106,8 +108,8 @@
 {
     [UIView animateWithDuration:0.25 animations:^{
         self.bgview.alpha = 0;
-        [self.window setFrame:CGRectZero];
-        [self.bgview setFrame:CGRectZero];
+        [self.window setFrame:CGRectMake(LYSW , 64, LYSW , LYSH - 112)];
+        [self.bgview setFrame:CGRectMake(LYSW, 0, LYSW / 4 * 3, LYSH)];
     } completion:^(BOOL finished) {
         [self.bgview removeFromSuperview];
         [self.window resignKeyWindow];

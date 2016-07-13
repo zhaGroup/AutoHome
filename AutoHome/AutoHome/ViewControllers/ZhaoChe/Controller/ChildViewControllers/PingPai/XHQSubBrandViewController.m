@@ -8,21 +8,36 @@
 
 #import "XHQSubBrandViewController.h"
 
-@interface XHQSubBrandViewController ()
+@interface XHQSubBrandViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic,strong) NSIndexPath *myIndexPath;
+@property (nonatomic,strong) NSArray *brands;
+@property (nonatomic,strong) UITableView *tableView;
+@property (nonatomic,strong) NSArray *series;
 
 @end
 
 @implementation XHQSubBrandViewController
+-(instancetype)initWithIndexPath:(NSIndexPath *)indexPath andbrands:(NSArray *)brands
+{
+    if (self = [super init]) {
+        _myIndexPath = indexPath;
+        _brands = brands;
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor cyanColor];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Table view
+
 
 /*
 #pragma mark - Navigation

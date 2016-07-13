@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XHQRootViewController.h"
+#import "XHQBrandCar.h"
 
-@interface XHQSubBrandViewController : UIViewController
+@interface XHQSubBrandViewController : XHQRootViewController
+
+-(instancetype)initWithIndexPath:(NSIndexPath*)indexPath andbrands:(NSArray *)brands;
 
 @end
