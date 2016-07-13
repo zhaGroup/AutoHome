@@ -11,7 +11,7 @@
 
 @interface XHQBrand : JSONModel
 @property (nonatomic,copy) NSString *icon;
-@property (nonatomic,assign) NSInteger brandID;
+@property (nonatomic,strong) NSNumber *brandID;
 @property (nonatomic,copy) NSString *name;
 
 @end

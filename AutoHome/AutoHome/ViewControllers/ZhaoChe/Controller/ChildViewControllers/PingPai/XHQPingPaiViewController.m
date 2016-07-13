@@ -90,7 +90,7 @@
     window.windowLevel = UIWindowLevelNormal;
     window.hidden = NO;
     [window makeKeyAndVisible];
-    window.rootViewController = [[XHQSubBrandViewController alloc] init];
+    window.rootViewController = [[XHQSubBrandViewController alloc] initWithIndexPath:indexPath andbrands:self.dataSource];
     self.window = window;
     
     UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(LYSW, 0, LYSW / 4 * 3, LYSH)];

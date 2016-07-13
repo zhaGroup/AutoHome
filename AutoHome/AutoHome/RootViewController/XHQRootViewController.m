@@ -38,14 +38,14 @@
 -(void)request:(NSString *)method url:(NSString *)urlString para:(NSDictionary *)dict
 {
     if ([method isEqualToString:@"GET"]) {
-        [XHQNetRequest get:urlString complete:^(id data) {
+        [XHQNetRequest get:urlString paramers:dict complete:^(id data) {
             [self parserData:data];
         } fail:^(NSError *error) {
             NSLog(@"error = %@",error);
             [self showHub:NO];
         }];
     }else{
-        [XHQNetRequest post:urlString complete:^(id data) {
+        [XHQNetRequest post:urlString paramers:dict complete:^(id data) {
             [self parserData:data];
         } fail:^(NSError *error) {
             NSLog(@"POST失败原因 = %@",error.description);

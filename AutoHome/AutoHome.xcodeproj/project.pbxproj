@@ -30,6 +30,10 @@
 		854277511D352AC5009D0A3C /* XHQBrandCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8542774F1D352AC5009D0A3C /* XHQBrandCell.m */; };
 		854277521D352AC5009D0A3C /* XHQBrandCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 854277501D352AC5009D0A3C /* XHQBrandCell.xib */; };
 		854277551D353861009D0A3C /* XHQSubBrandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 854277541D353861009D0A3C /* XHQSubBrandViewController.m */; };
+		854279631D36597E009D0A3C /* XHQSubBrand.m in Sources */ = {isa = PBXBuildFile; fileRef = 854279621D36597E009D0A3C /* XHQSubBrand.m */; };
+		854279661D365EF1009D0A3C /* XHQSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = 854279651D365EF1009D0A3C /* XHQSeries.m */; };
+		8542796A1D3667D5009D0A3C /* XHQSubBrandCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 854279681D3667D5009D0A3C /* XHQSubBrandCell.m */; };
+		8542796B1D3667D5009D0A3C /* XHQSubBrandCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 854279691D3667D5009D0A3C /* XHQSubBrandCell.xib */; };
 		856ED08C1D2FE3D60023E990 /* XHQCilceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 856ED08B1D2FE3D60023E990 /* XHQCilceModel.m */; };
 		856ED08F1D2FE5A40023E990 /* XHQZuiXinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 856ED08E1D2FE5A40023E990 /* XHQZuiXinModel.m */; };
 		856ED0931D30857F0023E990 /* XHQZuiXinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 856ED0911D30857F0023E990 /* XHQZuiXinCell.m */; };
@@ -216,6 +220,13 @@
 		854277501D352AC5009D0A3C /* XHQBrandCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHQBrandCell.xib; sourceTree = "<group>"; };
 		854277531D353861009D0A3C /* XHQSubBrandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQSubBrandViewController.h; sourceTree = "<group>"; };
 		854277541D353861009D0A3C /* XHQSubBrandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQSubBrandViewController.m; sourceTree = "<group>"; };
+		854279611D36597E009D0A3C /* XHQSubBrand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQSubBrand.h; sourceTree = "<group>"; };
+		854279621D36597E009D0A3C /* XHQSubBrand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQSubBrand.m; sourceTree = "<group>"; };
+		854279641D365EF1009D0A3C /* XHQSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQSeries.h; sourceTree = "<group>"; };
+		854279651D365EF1009D0A3C /* XHQSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQSeries.m; sourceTree = "<group>"; };
+		854279671D3667D5009D0A3C /* XHQSubBrandCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQSubBrandCell.h; sourceTree = "<group>"; };
+		854279681D3667D5009D0A3C /* XHQSubBrandCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQSubBrandCell.m; sourceTree = "<group>"; };
+		854279691D3667D5009D0A3C /* XHQSubBrandCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHQSubBrandCell.xib; sourceTree = "<group>"; };
 		856ED08A1D2FE3D60023E990 /* XHQCilceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQCilceModel.h; sourceTree = "<group>"; };
 		856ED08B1D2FE3D60023E990 /* XHQCilceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHQCilceModel.m; sourceTree = "<group>"; };
 		856ED08D1D2FE5A40023E990 /* XHQZuiXinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHQZuiXinModel.h; sourceTree = "<group>"; };
@@ -1026,10 +1037,17 @@
 				8542774E1D352AC5009D0A3C /* XHQBrandCell.h */,
 				8542774F1D352AC5009D0A3C /* XHQBrandCell.m */,
 				854277501D352AC5009D0A3C /* XHQBrandCell.xib */,
+				854279671D3667D5009D0A3C /* XHQSubBrandCell.h */,
+				854279681D3667D5009D0A3C /* XHQSubBrandCell.m */,
+				854279691D3667D5009D0A3C /* XHQSubBrandCell.xib */,
 				854277481D351CB3009D0A3C /* XHQBrandCar.h */,
 				854277491D351CB3009D0A3C /* XHQBrandCar.m */,
 				8542774B1D351EA0009D0A3C /* XHQBrand.h */,
 				8542774C1D351EA0009D0A3C /* XHQBrand.m */,
+				854279611D36597E009D0A3C /* XHQSubBrand.h */,
+				854279621D36597E009D0A3C /* XHQSubBrand.m */,
+				854279641D365EF1009D0A3C /* XHQSeries.h */,
+				854279651D365EF1009D0A3C /* XHQSeries.m */,
 			);
 			path = PingPai;
 			sourceTree = "<group>";
@@ -1618,6 +1636,7 @@
 				857842271D2E8544002C6528 /* 4.png in Resources */,
 				859B85DB1D2D125900305744 /* tab02_p@2x.png in Resources */,
 				859B85EC1D2D125900305744 /* tab05_p@3x.png in Resources */,
+				8542796B1D3667D5009D0A3C /* XHQSubBrandCell.xib in Resources */,
 				859B85DD1D2D125900305744 /* tab03@2x.png in Resources */,
 				856ED14E1D308DE40023E990 /* PhotoBroswerVC.xib in Resources */,
 				859B85E31D2D125900305744 /* tab04_p@2x.png in Resources */,
@@ -1781,6 +1800,7 @@
 				85A4F96F1D2D4756002061B3 /* XHQPingCeiViewController.m in Sources */,
 				854277321D34C11C009D0A3C /* XHQRecommendTotalViewController.m in Sources */,
 				856ED1541D308DE40023E990 /* SDWebImageCompat.m in Sources */,
+				8542796A1D3667D5009D0A3C /* XHQSubBrandCell.m in Sources */,
 				856ED15E1D308DE40023E990 /* UIImageView+HighlightedWebCache.m in Sources */,
 				856ED1601D308DE40023E990 /* UIView+WebCacheOperation.m in Sources */,
 				856ED1401D308DE40023E990 /* UIWindow+Launch.m in Sources */,
@@ -1815,6 +1835,7 @@
 				856ED1481D308DE40023E990 /* PBSaveBtn.m in Sources */,
 				856ED13C1D308DE40023E990 /* UIImage+FixOrientation.m in Sources */,
 				856ED1391D308DE40023E990 /* UIImage+Color.m in Sources */,
+				854279631D36597E009D0A3C /* XHQSubBrand.m in Sources */,
 				856ED1521D308DE40023E990 /* NSData+ImageContentType.m in Sources */,
 				856ED1421D308DE40023E990 /* PBConst.m in Sources */,
 				856ED1441D308DE40023E990 /* PhotoModel.m in Sources */,
@@ -1822,6 +1843,7 @@
 				8578421E1D2E8223002C6528 /* XHQHeaderView.m in Sources */,
 				856ED1551D308DE40023E990 /* SDWebImageDecoder.m in Sources */,
 				856ED1361D308DE40023E990 /* UIColor+Extend.m in Sources */,
+				854279661D365EF1009D0A3C /* XHQSeries.m in Sources */,
 				856ED1431D308DE40023E990 /* PhotoBroswerLayout.m in Sources */,
 				856ED1611D308DE40023E990 /* UIButton+SD.m in Sources */,
 			);

@@ -18,6 +18,7 @@
 #define LYSH [UIScreen mainScreen].bounds.size.height
 #define LYGrayColor [UIColor colorWithRed:244.0/255 green:244.0/255 blue:244.0/255 alpha:1]
 #define LYBlueColor [UIColor colorWithRed:6.0/255 green:150.0/255 blue:255.0/255 alpha:1]
+#define LYRGB(r, g, b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1.0f]
 
 #define LYNormalTitleFont 14
 #define LYSelectedTitleFont 16
@@ -33,9 +34,14 @@
 //图赏
 #define PICTURE @"http://mrobot.pcauto.com.cn/v2/photo/albums?groupId=89"
 
+//车品牌ID
+#define BrandID @"brandId"
+
 
 //获取所有品牌
 #define BrandCar @"http://mi.xcar.com.cn/interface/xcarapp/getBrands.php"
+//各品牌的车型
+#define SubBrandsURL @"http://mi.xcar.com.cn/interface/xcarapp/getSeriesByBrandId.php"
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
